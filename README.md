@@ -1,0 +1,2 @@
+# Montana-Resort
+hotel
