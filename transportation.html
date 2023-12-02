@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-rRL8BvaUDkIiSImnJs1OHiOeBGOg3Wl2s5l1QjA9qK7MUE5Fd5P/gm7ftQ2rX" crossorigin="anonymous">
+
+  <title>Transportation Options</title>
+</head>
+<body class="transportation-page">
+    <div class="logo-container">
+        <img src="logo_overview.png" alt="Hotel Logo" class="logo">
+    </div>
+
+    <header>
+        <h1>Explore Our Transportation Options</h1>
+    </header>
+    
+      <div class="transportation-container">
+        <div class="transportation-wrapper">
+            <div class="transportation-section">
+                <div class="transportation-content">
+                    <img src="car.jpg" alt="Car Rental">
+                    <h2>Car Rental</h2>
+                    <p>Explore the city at your own pace with our car rental services. Choose from a variety of vehicles to suit your needs.</p>
+                    <p>Price: $50 per day</p>
+                </div>
+    
+                <div class="transportation-content">
+                    <img src="bike.jpg" alt="Bicycle Rental">
+                    <h2>Bicycle Rental</h2>
+                    <p>Go green and enjoy the fresh air by renting one of our bicycles. Perfect for exploring parks and scenic routes.</p>
+                    <p>Price: $10 per hour</p>
+                </div>
+    
+                <div class="transportation-content">
+                    <img src="bus.webp" alt="Public Transit">
+                    <h2>Public Transit</h2>
+                    <p>Efficient and cost-effective, our public transit system connects you to key destinations throughout the city.</p>
+                    <p>Price: $2 per ride</p>
+                </div>
+            </div>
+        </div>
+        <button class="scroll-button right" onclick="scrollTransportation(1)">
+            <img src="arrow-right-3098.png" alt="Right Arrow">
+        </button>
+        <button class="open-button" onclick="openForm()">Open Form To Reserve</button>
+
+        <div class="form-popup" id="myForm">
+          <form action="/action_page.php" class="form-container">
+             <label for="email"><b>Email</b></label>
+             <input type="text" placeholder="Enter Email" name="email" required>
+      
+             <label for="psw"><b>Password</b></label>
+             <input type="password" placeholder="Enter Password" name="psw" required>
+      
+             <button type="submit" class="btn">Login</button>
+             <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+          </form>
+        </div>
+        <p class="parag_spa" id="spaText">Please write your review !</p>
+        <button id="editButton" onclick="openEditPrompt()">Edit</button>
+    </div>
+    
+    
+       
+    
+    <footer class="footer4">
+        <p>&copy; 2023 Montana Hotel All Rights Reserved.</p>
+    </footer>
+</body>
+    
+</html>

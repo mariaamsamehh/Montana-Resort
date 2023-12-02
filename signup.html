@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="script.js" ></script>
+</head>
+
+<body class="signup-page">
+  <div class="logo-container">
+    <img src="logo_overview.png" alt="Hotel Logo" class="logo">
+</div>
+    <form class="signup-form"> 
+    
+      <h2 class="signup_header">Sign Up</h2>
+      <label for="first-name">First Name:</label>
+      <input type="text" id="first-name" name="first-name" required>
+
+      <label for="last-name">Last Name:</label>
+      <input type="text" id="last-name" name="last-name" required>
+
+
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+  
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+  
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+  
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+
+      <label for="birthdate">Birth Date:</label>
+      <input type="date" id="birthdate" name="birthdate" required>
+  
+      <label for="nationality">Nationality:</label>
+      <select id="nationality" name="nationality" required>
+          <option value="" disabled selected>Select Nationality</option>
+          
+          <option value="albanian">Albanian</option>
+          <option value="algerian">Algerian</option>
+          <option value="american">American</option>
+          <option value="argentinian">Argentinian</option>
+          <option value="australian">Australian</option>
+          <option value="brazilian">Brazilian</option>
+          <option value="british">British</option>
+          <option value="canadian">Canadian</option>
+          <option value="chinese">Chinese</option>
+          <option value="egyptian">Egyptian</option>
+          <option value="french">French</option>
+           
+      </select> 
+      
+      <button type="submit" onclick="submitForm()">Sign Up</button> 
+      
+    </form>
+  </body>
+  
+  </html>

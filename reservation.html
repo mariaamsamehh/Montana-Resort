@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservation</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="script.js"></script>
+</head>
+
+<body class="reservation-page">
+    <div class="logo-container">
+        <img src="logo_overview.png" alt="Hotel Logo" class="logo">
+    </div>
+
+  <form class="reservation-form" onsubmit="submitReservation(event)">
+    <h2 class="reser_header">Reservation Details</h2>
+
+    <label for="check-in">Check-In Date:</label>
+    <input type="date" id="check-in" name="check-in" required>
+
+    <label for="check-out">Check-Out Date:</label>
+    <input type="date" id="check-out" name="check-out" required>
+
+    <label for="room-type">Room Type:</label>
+    <select id="room-type" name="room-type">
+      <option value="standard">Regular Room</option>
+      <option value="deluxe">Deluxe Suite</option>
+      <option value="suite">Premium Suite</option>
+    </select>
+
+    <label for="breakfast">Include Breakfast:</label>
+    <input type="checkbox" id="breakfast" name="breakfast">
+
+    <button type="submit">Submit Reservation</button>
+  </form>
+
+  <footer class="footer">
+    <p>Contact Us: montana@gmail.com</p>
+    <p>&copy; 2023 Montana Hotel All Rights Reserved.</p>
+  </footer>
+  
+
+ 
+</body>
+
+
+</html>

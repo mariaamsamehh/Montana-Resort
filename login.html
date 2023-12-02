@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="script.js" ></script>
+  <link rel="icon" href="logo_overview.png" type="image/x-icon">
+</head>
+
+
+
+<body class="login-page"> 
+  <div class="logo-container">
+    <img src="logo_overview.png" alt="Hotel Logo" class="logo">
+</div>
+  
+    <form class="login-form" method="post" id="loginform" action="login-process.php">
+      <h2>Login</h2>
+      <label for="login-username">Username:</label>
+      <input type="text" id="login-username" name="login-username" required>
+
+      <label for="login-password">Password:</label>
+      <input type="password" id="login-password" name="login-password" required>
+      <div class="form-link">
+        <span>Don't have an account? <a href="#" class="link login-link">Sign Up</a></span>
+      </div>
+
+  
+      <button type="submit" >Login</button>
+
+      
+      
+    </form>
+    <footer class="footer">
+        <p>&copy; 2023 Montana Hotel All Rights Reserved.</p>
+      </footer>
+  </body>
+  </html>
